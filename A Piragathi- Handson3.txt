@@ -1,0 +1,174 @@
+Handson 3 programs
+
+1).Program
+
+package com.pack;
+import java.util.Scanner;
+class Venue{
+	String venue, city;
+}
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);  
+		System.out.println("enter venue name=");
+		String venue = s.nextLine();
+		System.out.println("enter city name=");
+		String city = s.nextLine();
+	System.out.println("venue details:"  +venue+ city);
+		
+
+	}
+
+}
+
+
+
+
+2).Program
+
+package com.pack;
+import java.util.Scanner;
+class player{
+	String name, country, skill;
+
+}
+public class Main1 {
+
+	public static void main(String[] args) {
+		Scanner s1= new Scanner(System.in);  
+		System.out.println("enter player name:");
+	String name = s1.nextLine();
+		System.out.println("enter country name:");
+		String country = s1.nextLine();
+		System.out.println("enter skill:");
+		String skill= s1.nextLine();
+		
+	System.out.println("player details\n player name  : " +name);
+	System.out.println("country name  :" +country);
+	System.out.println("enter skill  :"+skill);
+		
+
+	}
+
+}
+
+
+3)program
+
+package com.pack;
+import java.util.Scanner;
+class Delivery{
+	Long over, ball,runs;
+    String batsman, bowler, nonStriker;
+
+
+
+void displayDeliveryDetails() {
+	Scanner d= new Scanner(System.in);  
+	System.out.println("enter the over:");
+	 over = d.nextLong();
+	System.out.println("enter the balls:");
+	ball = d.nextLong();
+	System.out.println("enter the runs:");
+	 runs= d.nextLong();  
+	System.out.println("enter the batsman name:");
+	 batsman = d.next();
+	System.out.println("enter the bowler name:");
+	bowler = d.next();
+	System.out.println("enter the nonStriker name:");
+	nonStriker = d.next();
+	
+}
+}
+public class Main2 {
+
+	public static void main(String[] args) {
+		Delivery D=new Delivery();
+		D.displayDeliveryDetails();
+		System.out.println("delivery details:");
+		System.out.println("over:"+D.over);
+		System.out.println("ball: "+D.ball);
+		System.out.println("runs: "+D.runs);
+		System.out.println("batsman:"+D.batsman);
+		System.out.println("bowler:"+D.bowler);
+		System.out.println("nonStriker:"+ D.nonStriker);
+
+	}
+
+}
+
+
+4)Program
+
+package com.pack;
+import java.util.Scanner;
+class Player{
+	String name, country,skill;
+	void player() {
+		Scanner s1= new Scanner(System.in);  
+		System.out.println("enter player name");
+		String input=s1.next();
+		String words[]=input.split(",");
+		
+		name=words[0];
+		country=words[1];
+		skill=words[2];
+		
+				
+	}
+}
+
+public class Main3 {
+
+	public static void main(String[] args) {
+		Player p=new Player();
+		p.player();
+		System.out.println("player details");
+		System.out.println("player name: "+ p.name);
+		System.out.println("country name: "+p.country);
+		System.out.println("skill: p.skill");
+
+	}
+
+}
+
+
+5)Program
+
+package com.day3;
+class Venue1{
+	String name,city;
+	public void setname(String name) {
+		this.name=name;
+		
+	}
+	public String getname() {
+		return this.name;
+		
+	}
+	public void setcity(String city) {
+		this.city=city;
+		
+	}
+	public String getcity() {
+		return this.city;
+	}
+}
+
+public class Handson5 {
+
+	public static void main(String[] args) {
+		Venue1 v=new Venue1();
+		System.out.println("venue details");
+		v.setname("green park stadium");
+		System.out.println("venue name:"+v.getname());
+		v.setcity("kanpur");
+		System.out.println("venue city:"+v.getcity());
+		
+
+	}
+
+}
+
